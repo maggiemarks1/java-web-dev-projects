@@ -2,10 +2,10 @@ package org.launchcode;
 
 import java.util.Scanner;
 
-public class TempConverter {
+public class Main {
     public static void main(String[] args) {
+
         double fahrenheit;
-        double celsius;
         Scanner input;
 
         input = new Scanner(System.in);
@@ -13,8 +13,7 @@ public class TempConverter {
         fahrenheit = input.nextDouble();
         input.close();
 
-        celsius = (fahrenheit - 32) * 5/9;
-        System.out.println("The temperature in Celsius is: " + celsius + "°C");
+        Temperature currentTemp = new Temperature();
+        currentTemp.setFahrenheit(fahrenheit);
     }
 }
-
