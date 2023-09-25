@@ -28,5 +28,11 @@ public class MenuItem {
     public void setNew(boolean aNew) {
         isNew = aNew;
     }
+
+    @Override
+    public String toString(){
+        return "Menu Item: " + this.description + ", " + this.category + "\n" + this.price + "\n" + this.isNew;
+
+    }
 }
 

@@ -24,6 +24,7 @@ public class Menu {
         return lastUpdated;
     }
 
+
     public ArrayList<MenuItem> getItems() {
         return items;
     }
